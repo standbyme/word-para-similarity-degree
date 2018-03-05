@@ -1,9 +1,6 @@
 import * as assert from 'assert'
-// tslint:disable-next-line:no-implicit-dependencies
-import axios from 'axios'
-import * as Cheerio from 'cheerio'
 
-import abstract_parser from './abstract'
+import get_para_keywords from './get-para-keywords'
 
 async function get_html(url: string): Promise<CheerioStatic> {
     const { data } = await axios.get(url)
